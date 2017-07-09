@@ -13,6 +13,9 @@ sio.savemat('/home/animesh/Documents/RAHULw/SMALL.mat', dict(x=x, y=y))
 #Now load it and print it , the value of key x and y is our matrix which we will convert to numpy array
 m=sio.loadmat('/home/animesh/Documents/RAHULw/SMALL.mat')
 a=np.array([m['y'],m['x']])
+#the below line prints our desired array, we can use load and save python method to save the array in a file,in below codes which are 
+#commented i have tried to split them and then save them
+print a 
 #Now a is our required numpy array data
 #The below code saves the array first as a binary file and then as a file you can open in a regular text editor, you can uncomment below lines to see it
 '''
